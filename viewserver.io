@@ -60,7 +60,6 @@ handlers := Map with(
             error("compilation_error", ex error asMutable strip)
         )
 
-
         funs append(compiledCode)
         true
     ),
