@@ -108,7 +108,7 @@ handlers := Map with(
             ex catch(Exception, 
                 (ex error != "fatal_error") ifTrue(
                     log("function raised exception (#{ex error})" interpolate)
-                    result removeAll
+                    reductions removeAll
                 ) ifFalse(
                     return error("reduce_runtime_error", "function raised fatal exception")
                 )
