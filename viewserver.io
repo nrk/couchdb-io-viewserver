@@ -129,7 +129,7 @@ mainLoop := method(
             command := JSON fromJSON(lineFromStdin)
         )
         ex catch(Exception,
-            output(error('unknown_error', ex error))
+            output(error("unknown_error", ex error))
         )
 
         output(handleCommand(command))
@@ -137,4 +137,3 @@ mainLoop := method(
 )
 
 mainLoop
-
