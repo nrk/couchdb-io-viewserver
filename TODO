@@ -1,0 +1,10 @@
+* I still can't get how to return from a method when inside a catch:  
+  simply doing "return myvalue" returns from the catch block but this 
+  doesn't get the execution flow out of the current method. Need to fix.
+
+* Need to find a way to isolate the core functions of the view server 
+  from the methods actually running in the view. Views, though, are 
+  allowed to access to a small set of functions defined in the view 
+  server like "emit" or "sum". Maybe applying a different context when 
+  compiling methods defined in views might do the trick.
+

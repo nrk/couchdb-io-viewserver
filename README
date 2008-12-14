@@ -1,0 +1,21 @@
+couchdb-io-viewserver
+======================
+
+A CouchDB view server that allows writing view functions in Io.
+
+This is just a little experiment to figure out how the Io programming language 
+actually works. The view server protocol implementation is nearly complete, 
+there are still a few parts broken though. Be kind, I'm still new to Io :)
+
+
+The Io programming language
+===========================
+
+Io is a small, prototype-based programming language. The ideas in Io are mostly 
+inspired by Smalltalk (all values are objects, all messages are dynamic), Self 
+(prototype-based), NewtonScript (differential inheritance), Act1 (actors and 
+futures for concurrency), LISP (code is a runtime inspectable/modifiable tree) 
+and Lua (small, embeddable).
+
+(Quoted from http://www.iolanguage.com/)
+
